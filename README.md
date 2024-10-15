@@ -3,7 +3,7 @@
 ## A template for standard (IAB, Atlas, DCM) banners using Greensock as tween engine.
 ## Includes a basic template and optional utilities for processing assets using Gulp.
 
-###USING THE TEMPLATE:
+##USING THE TEMPLATE:
 
 	⁃ Not sure why but git isn't seeing the img folder so before using gulp, simply add a folder named "img" inside of assets/(size of banner)/.cache
 
@@ -12,7 +12,7 @@
 	⁃ The only library this template pulls from is the Greensock tween engine and PurgeCSS, everything else is native js.
 	⁃ The base template uses Greensock's TimelineLite, but CSSPlugin, EasePack, and TweenLite are also supported.
 
-###PurgeCSS (before shipping!):
+##PurgeCSS (before shipping!):
 
 To purge unused CSS, cd into the folder (i.e. src/160x600)
 * Delete any unused divs (purgeCSS still looks at uncommented code)
@@ -22,7 +22,8 @@ To purge unused CSS, cd into the folder (i.e. src/160x600)
     * purgecss -css css/main.css -con *.html -o css
     * i.e. purgecss --css {point to css} --content  {point to html/js} --output  
 	
-	DOM:
+
+DOM:
 	•	The head contains your script calls, a template title tag, and a stylesheet link, the clicktag variable definition (default is DCM), as well as an important meta tag that determines the sie of the ad.
 	•   The body of the DOM consists of a container div that will be sized in JS according to the meta.adsize information provided above it, and an important **AUTO DIV START** comment that will determine where divs will be inserted by the gulp process.
 	•	At the bottom, after the closing body tag, main.js is referenced and another script tag is opened to set the clicktag and call init() on window.onload
