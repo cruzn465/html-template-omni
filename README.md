@@ -3,7 +3,7 @@
 ## A template for standard (IAB, Atlas, DCM) banners using Greensock as tween engine.
 ## Includes a basic template and optional utilities for processing assets using Gulp.
 
-##USING THE TEMPLATE:
+## USING THE TEMPLATE:
 
 	⁃ Not sure why but git isn't seeing the img folder so before using gulp, simply add a folder named "img" inside of assets/(size of banner)/.cache
 
@@ -12,7 +12,7 @@
 	⁃ The only library this template pulls from is the Greensock tween engine and PurgeCSS, everything else is native js.
 	⁃ The base template uses Greensock's TimelineLite, but CSSPlugin, EasePack, and TweenLite are also supported.
 
-##PurgeCSS (before shipping!):
+## PurgeCSS (before shipping!):
 
 To purge unused CSS, cd into the folder (i.e. src/160x600)
 * Delete any unused divs (purgeCSS still looks at uncommented code)
